@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="410dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bgpink"
+        android:contentDescription="@string/todo" />
+
+    <!--menggunakan fitur textview, dengan diberi keterangan teksnya "Pengguna",
+    diberi nama id yaitu teksDetailPengguna,
+    mempunyai ukuran teks sebesar 22sp dan dicetak tebal (bold),
+    diatur agar bisa terletak ditengah-tengah dengan menggunakan gravity center-->
+    <TextView
+        android:id="@+id/teksDetailPengguna"
+        android:layout_width="136dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/pengguna"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksSelamat" />
+
+    <!--menggunakan fitur textview, dengan diberi keterangan teksnya "Selamat Datang",
+    diberi nama id yaitu teksSelamat,
+    margin top sebesar 76 dp,
+    diatur agar lokasinya di tengah-tengah menggunakan gravity center-->
+    <TextView
+        android:id="@+id/teksSelamat"
+        android:layout_width="218dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center"
+        android:text="Selamat Datang"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--menggunakan fitur button, dengan diberi keterangan teksnya "CEK GITHUB",
+    diberi nama id yaitu tombolGithub,
+    posisinya terletak di bawah imageview-->
+    <Button
+        android:id="@+id/tombolGithub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cek_github"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksDetailPengguna"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <!--menggunakan fitur button, dengan diberi keterangan teksnya "daftar",
+    diberi nama id yaitu tombolDaftar-->
+    <Button
+        android:id="@+id/tombolDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksDetailPengguna"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <!--menggunakan fitur button, dengan diberi keterangan teksnya "Menu Kue",
+   diberi nama id yaitu idMenu-->
+    <Button
+        android:id="@+id/idMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_kue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksDetailPengguna"
+        app:layout_constraintVertical_bias="0.61" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

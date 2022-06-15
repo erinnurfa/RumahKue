@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RumahKue</string>
+    <string name="pengguna">pengguna</string>
+    <string name="cek_github">cek github</string>
+    <string name="daftar">daftar</string>
+    <string name="selamat_datang">selamat datang</string>
+    <string name="file_name">File Name</string>
+    <string name="menu_kue">menu kue</string>
+    <string name="hello_customer_rumahkue">hello customer rumahkue</string>
+    <string name="todo">TODO</string>
+    <string name="order">order</string>
+</resources>
